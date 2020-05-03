@@ -18,7 +18,7 @@ $ passwd
 Create user from which you are going to run bot to not run bot as root.
 ```
 $ sudo adduser bot
-$ su bot
+$ su - bot
 $ pip3 install -U torch==1.4.0+cpu torchvision==0.5.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
 $ pip3 install -U discord.py
 $ pip3 install -U transformers
@@ -73,6 +73,6 @@ $ source ~/.bash_profile
 ### Running bot:
 - Go to termianl and run:
 ```
-$ wget https://raw.githubusercontent.com/Apurer/java-encryption-guide/master/ai-bot.py
+$ wget https://raw.githubusercontent.com/Apurer/interactive-chat-bot/master/ai-bot.py
 $ python3 ai-bot.py
 ```
