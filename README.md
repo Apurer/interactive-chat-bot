@@ -76,3 +76,12 @@ $ source ~/.bash_profile
 $ wget https://raw.githubusercontent.com/Apurer/interactive-chat-bot/master/ai-bot.py
 $ python3 ai-bot.py
 ```
+### To run in bot background
+- Go to terminal and run:
+```
+$ ~/ai-bot.py &
+```
+- If you wish to stop bot from running run command:
+```
+$ pkill -f ai-bot.py
+```
