@@ -81,7 +81,7 @@ $ python3 ai-bot.py
 ### To run in bot background
 - Go to terminal and run:
 ```
-$ ~/ai-bot.py &
+$ nohup ~/ai-bot.py &
 ```
 - To stop bot from running run command:
 ```
