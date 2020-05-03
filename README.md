@@ -30,7 +30,7 @@ $ pip3 install -U transformers
 - [On github.com/microsoft/DialoGPT you can find out how to train models and install dependencies](https://github.com/microsoft/DialoGPT)
 
 
-## Generating Discord Token:
+### Generating Discord Token:
 - Go to https://discordapp.com/developers/applications
 - Click "New Application"
 - Name it whatever you want (i named mine "ai-bot")
