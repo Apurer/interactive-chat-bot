@@ -71,11 +71,13 @@ $ source ~/.bash_profile
 - Depending on your server settings you might have to modify bot role to have permissions to use the channel and read / send messages
 
 ### Running bot:
-- Go to termianl and run:
+- Go to terminal and run:
 ```
 $ wget https://raw.githubusercontent.com/Apurer/interactive-chat-bot/master/ai-bot.py
 $ python3 ai-bot.py
 ```
+- If you wish to stop bot from running press: CTRL + C
+
 ### To run in bot background
 - Go to terminal and run:
 ```
