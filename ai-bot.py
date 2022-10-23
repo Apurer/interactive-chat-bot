@@ -4,8 +4,8 @@ import torch
 import discord
 import os
 
-tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-small")
-model = AutoModelWithLMHead.from_pretrained("microsoft/DialoGPT-small")
+tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-large")
+model = AutoModelWithLMHead.from_pretrained("microsoft/DialoGPT-large")
 
 class MyClient(discord.Client):
     async def on_ready(self):
