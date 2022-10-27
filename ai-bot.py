@@ -22,5 +22,5 @@ class MyClient(discord.Client):
         print('Message from {0.author}: {0.content}'.format(message))
         print('Message from bot {}'.format(tosend))
 client = MyClient(intents = intents)
-client.run('DISCORD TOKEN HERE')
+client.run(os.environ['DISCORD_TOKEN'])
 
