@@ -3,7 +3,7 @@
 ### Requirements:
 - Ubuntu terminal
 - Discord account
-- At least 2GB of RAM to run DialoGPT-small model
+- At least 2GB of RAM to run DialoGPT-small model, more if using larger model
 
 ### Installation of dependencies:
 #### In Ubuntu terminal run following commands.
@@ -46,23 +46,20 @@ $ echo "export DISCORD_TOKEN=paste_your_token_here" >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
 
-### Adding bot to your server and giving him permissions:
+### Adding bot to your server and giving it permissions:
 - Go back to your application view (if you haven't closed it from step "Generating Discord Token" you can skip sub steps for this bullet) 
     - Go to https://discordapp.com/developers/applications
     - Select your app under "My Applications" (mine was "ai-bot")
-- Go to OAuth2 tab (it's on the left side under settings)
-- Click on button "Add Redirect"
-    - Paste http://localhost in the field
-    - Alert "Careful — you have unsaved changes!" will come up      
-        - Click on "Save Changes" button
-- Under "OAuth2 URL Generator"
-    - Click on "SELECT REDIRECT URL" and choose http://localhost from dropdown
+- Under "Privileged Gateway Intents" toggle:
+    -"MESSAGE CONTENT INTENT" as true
+- Go to OAuth2 tab (it's on the left side under "General Information")
 - Under "SCOPES" select:
     - "bot"
-- Under "BOT PERMISSIONS" select:
+- Under "URL Generator" select:
     - Send Messages
     - Read Message History
-- From "SCOPES" area copy link 
+- Go to Bot tab
+- From "GENERATED URL" area copy link 
 - Paste copied link into your browser and select server you want to invite bot to
 - Click continue
 - Click Authorize 
@@ -73,7 +70,7 @@ $ source ~/.bash_profile
 ### Running bot:
 - Go to terminal and run:
 ```
-$ wget https://raw.githubusercontent.com/Apurer/interactive-chat-bot/master/ai-bot.py
+$ wget https://raw.githubusercontent.com/SubatomicScale/interactive-chat-bot/master/ai-bot.py
 $ python3 ai-bot.py
 ```
 - To stop bot from running press: CTRL + C
