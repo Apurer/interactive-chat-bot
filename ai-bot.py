@@ -1,12 +1,11 @@
-#!/usr/bin/env python3
 from transformers import AutoModelWithLMHead, AutoTokenizer
 import torch
 import discord
 import os
 
-tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-small")
+tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-small",padding_side='left')
 model = AutoModelWithLMHead.from_pretrained("microsoft/DialoGPT-small")
-
+intents = discord.Intents().all()
 class MyClient(discord.Client):
     async def on_ready(self):
         print('Logged on as {0}!'.format(self.user))
@@ -22,6 +21,6 @@ class MyClient(discord.Client):
         await message.channel.send(tosend)
         print('Message from {0.author}: {0.content}'.format(message))
         print('Message from bot {}'.format(tosend))
-
-client = MyClient()
+client = MyClient(intents = intents)
 client.run(os.environ['DISCORD_TOKEN'])
+
