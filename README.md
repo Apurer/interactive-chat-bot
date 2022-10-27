@@ -70,7 +70,7 @@ $ source ~/.bash_profile
 ### Running bot:
 - Go to terminal and run:
 ```
-$ wget https://raw.githubusercontent.com/SubatomicScale/interactive-chat-bot/master/ai-bot.py
+$ wget https://raw.githubusercontent.com/Apurer/interactive-chat-bot/master/ai-bot.py
 $ python3 ai-bot.py
 ```
 - To stop bot from running press: CTRL + C
